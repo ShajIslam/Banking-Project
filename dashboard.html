@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::placeholder{
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Dashboard</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-12 w-9/12 mx-auto ">
+                <div class="bg-cyan-400 text-white  p-12 rounded-2xl">
+            <h4 class="text-4xl">Desposit</h1>
+            <h1 class="text-5xl">$<span id="make-deposit">00</span></h1>
+                </div>
+                <div class="bg-cyan-600 text-white  p-12 rounded-2xl">
+            <h4 class="text-4xl">Withdraw</h1>
+            <h1 class="text-5xl">$00</h1>
+                </div>
+                <div class="bg-cyan-800 text-white  p-12 rounded-2xl">
+            <h4 class="text-4xl">Balance</h1>
+            <h1 class="text-5xl">$1200</h1>
+                </div>
+            </div>           
+        </section>
+        <!--deposit and withdraw-->
+        <section class="mt-24">
+            <div class="grid grid-cols-2 gap-12 w-9/12 mx-auto text-white ">
+                <div class="bg-blue-500 p-12 rounded-2xl">
+            <h4 class="text-4xl mb-5">Please Desposit</h1>
+                <input type="text" name="deposit" id="deposit-field" class="w-96 h-8 text-black" placeholder="Amount">
+                <br>
+                <br>
+                <br>
+                <button id="deposit-btn" class="justify-center bg-blue-800 text-white px-10 py-2">Desposit</button>
+                </div>
+                
+                <div class="bg-blue-300  p-12 rounded-2xl">
+                <h4 class="text-4xl mb-5">Please withdraw</h1>
+                    <input type="text" name="withdraw" id="withdraw-field" class="w-96 h-8 text-black" placeholder="Amount">
+                     <br>
+                     <br>
+                     <button id="withdraw-btn" class="justify-center bg-blue-900 text-white px-10 py-2">Desposit</button>
+                </div>
+            </div>         
+        </section>
+    </main>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
