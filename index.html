@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bankin - project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::placeholder{
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1 class="text-5xl text-center pt-5"> <span class="text-cyan-400">Trust Professional </span>Banking System</h1>    
+    </header>
+    <main>
+        <section class="bg-cyan-500 w-9/12 mx-auto mt-24 p-24 ">
+            <div class="align-center text-center">
+
+               <h3 class="text-3xl mb-10">Please Login</h3>         
+              <input type="text" name="" id="input-text" class="mb-5 w-96 rounded-full h-8" placeholder="enter your username or email">
+                <br>
+                <input type="password" name="" id="input-pass" class="mb-5 w-96 rounded-full h-8" placeholder="enter your password">
+                <br>
+                <button class="justify-center rounded-full bg-cyan-600 text-white px-10 py-2">Login</button>
+                <br>
+                <br>
+                <a href="#">Forgot password?</a>
+            </div>
+            
+        </section>
+    </main>
+
     
 </body>
 </html>
